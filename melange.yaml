@@ -1,0 +1,16 @@
+package:
+  name: example-package
+  version: "1.0.0"
+  description: "An example Alpine package built using Melange"
+  source: "https://example.com/source/alpine.tar.gz"
+  dependencies:
+    - build-base
+    - curl
+
+build:
+  steps:
+    - name: "Build the package"
+      command: "make"
+  
+artifacts:
+  - path: "/output/example-p
